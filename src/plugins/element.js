@@ -22,10 +22,17 @@ import {
   Switch,
   Pagination,
   Dialog,
-  MessageBox
-
+  MessageBox,
+  Tag,
+  Tree,
+  Select,
+  Option
 } from 'element-ui'
 
+Vue.use(Option)
+Vue.use(Select)
+Vue.use(Tree)
+Vue.use(Tag)
 Vue.prototype.$confirm = MessageBox.confirm
 Vue.use(Dialog)
 Vue.use(Pagination)
